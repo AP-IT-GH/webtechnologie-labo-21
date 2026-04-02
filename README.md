@@ -21,6 +21,9 @@ webtechnologie/
 └─ labo-n/      
 ```
 
+- Gebruik steeds JS modules om globale variabelen te vermijden (`<script type="module" src="./path/to/script.js"></script>`)
+- Volg de [Coding Guidelines](https://apwt.gitbook.io/webtechnologie/coding-guidelines)
+
 ## oefeningen Postman
 
 ### oefening 1: basis api request
@@ -218,18 +221,16 @@ https://www.thecocktaildb.com/api/json/v1/1/search.php?s=kiwi
 
 Bovenstaande URL zoekt naar alle cocktails met kiwi als ingrediënt.
 
-{% hint style="info" %}
-Opgelet: Voor deze fetch-api call zal je ook nog extra header info moeten meegeven. Dat doe je door bij de `fetch`-methode de 2e parameter in te stellen:
-
-```js
-fetch(
-  apiUrl,
-  {
-    headers: { "Accept-Encoding": "gzip,deflate,compress" }
-  }
-)
-```
-{% endhint %}
+> **Opgelet:** Voor deze fetch-api call zal je ook nog extra header info moeten meegeven. Dat doe je door bij de `fetch`-methode de 2e parameter in te stellen:
+>
+> ```js
+> fetch(
+>   apiUrl,
+>   {
+>     headers: { "Accept-Encoding": "gzip,deflate,compress" }
+>   }
+> )
+> ```
 
 #### Voorbeeldinteractie
 
